@@ -12,7 +12,7 @@
     yyyy = today.getFullYear(),
     nextYear = yyyy + 1,
     // edit this
-    dayMonth = '04/08/',
+    dayMonth = '04/07/',
     birthday = dayMonth + yyyy;
 
   today = mm + '/' + dd + '/' + yyyy;

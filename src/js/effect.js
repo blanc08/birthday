@@ -406,6 +406,12 @@ function happyBirthday() {
 
     ctx.font = opts.charSize + 'px Verdana';
   });
+
+  // TimeOut
+  setTimeout(() => {
+    c.classList.remove('absolute');
+    c.classList.add('hidden');
+  }, 10000);
 }
 
 function showDino() {
@@ -511,6 +517,7 @@ function bdayBalloons() {
 
 function playEffect() {
   const audio = document.querySelector('audio');
-  console.log(audio);
   audio.play();
+
+  happyBirthday();
 }
