@@ -39,7 +39,7 @@
 
       //do something later when date is reached
       if (distance < 0) {
-        document.getElementById('headline').innerText = "It's my birthday!";
+        document.getElementById('headline').classList.add('hidden');
         document.getElementById('countdown').style.display = 'none';
         document.getElementById('content').classList.remove('hidden');
         clearInterval(x);

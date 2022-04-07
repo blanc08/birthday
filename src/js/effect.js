@@ -1,5 +1,8 @@
+const button = document.querySelector('button');
+
 function happyBirthday() {
   c.classList.add('absolute');
+  c.classList.remove('hidden');
 
   var w = (c.width = window.innerWidth),
     h = (c.height = window.innerHeight),
@@ -516,8 +519,12 @@ function bdayBalloons() {
 }
 
 function playEffect() {
+  document.getElementById('cake').classList.add('hidden');
   const audio = document.querySelector('audio');
   audio.play();
 
   happyBirthday();
+
+  button.innerText = 'Dino';
+  button.setAttribute('onclick', 'showDino()');
 }

@@ -33,14 +33,6 @@
         </ul>
       </div>
       <div id="content" class="hidden">
-        <button onclick="playEffect()">Click me</button>
-        <!-- <button onclick="playEffect()">Start Jorney</button>
-        <button onclick="bdayBalloons()">Balloons</button> -->
-        <button onclick="showDino()">dino</button>
-        <!-- Balloons -->
-        <div class="balloon">
-          <div class="string"></div>
-        </div>
         <!-- dino card -->
         <section id="dino" class="hidden">
           <div class="card">
@@ -49,8 +41,10 @@
               <img src="https://image.ibb.co/fYzTrb/lastofus.jpg" />
             </div>
             <div class="details absolute">
-              <h2 class="text-green-400">You're not a Fossil! (YET)</h2>
-              <h3 class="text-red-500">(HAPPY BIRTHDAY)</h3>
+              <h2 class="text-green-400 text-center">
+                You're not a Fossil! (YET)
+              </h2>
+              <h3 class="text-red-500 text-center">(HAPPY BIRTHDAY)</h3>
               <p>Dear Dad,</p>
               <p>Let's see.. .</p>
               <p>You're never around, you</p>
@@ -64,15 +58,43 @@
             </div>
           </div>
         </section>
+        <!-- cake -->
+        <section id="cake">
+          <div class="cake">
+            <div class="velas">
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+            </div>
+            <div class="cobertura"></div>
+            <div class="bizcocho"></div>
+          </div>
+        </section>
+        <section id="button" class="text-center">
+          <!-- Button -->
+          <button
+            class="px-6 py-2 bg-slate-100 rounded-md font-semibold"
+            onclick="playEffect()"
+          >
+            Click me
+          </button>
+        </section>
         <!-- Happy birthday word -->
-        <canvas id="c" class="left-0 top-0"></canvas>
+        <canvas id="c" class="left-0 top-0 hidden"></canvas>
       </div>
     </div>
+    <!-- addition content -->
     <!-- Audio -->
     <audio class="hidden" controls loop>
       <source src="src/audio/hbd.mp3" type="audio/ogg" />
       Your browser does not support the audio element.
     </audio>
+    <!-- Balloons -->
+    <div class="balloon">
+      <div class="string"></div>
+    </div>
   </body>
 
   <script src="src/js/effect.js"></script>
