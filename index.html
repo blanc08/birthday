@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Happy Birthday</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+    <!-- tailwind -->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/src/css/stylesheet.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="headline">Countdown to my birthday</h1>
+      <div id="countdown" class="flex justify-center align-middle">
+        <ul>
+          <li><span id="days"></span>days</li>
+          <li><span id="hours"></span>Hours</li>
+          <li><span id="minutes"></span>Minutes</li>
+          <li><span id="seconds"></span>Seconds</li>
+        </ul>
+      </div>
+      <div id="content" class="hidden">
+        <button onclick="happyBirthday()">Click me</button>
+        <button onclick="playEffect()">Start Jorney</button>
+        <button onclick="bdayBalloons()">Balloons</button>
+        <button onclick="showDino()">dino</button>
+        <!-- Balloons -->
+        <div class="balloon">
+          <div class="string"></div>
+        </div>
+        <!-- dino card -->
+        <section id="dino" class="hidden">
+          <div class="card">
+            <div class="imgBox">
+              <div class="bark"></div>
+              <img src="https://image.ibb.co/fYzTrb/lastofus.jpg" />
+            </div>
+            <div class="details absolute">
+              <h2 class="text-green-400">You're not a Fossil! (YET)</h2>
+              <h3 class="text-red-500">(HAPPY BIRTHDAY)</h3>
+              <p>Dear Dad,</p>
+              <p>Let's see.. .</p>
+              <p>You're never around, you</p>
+              <p>hate the music I'm into, you</p>
+              <p>practically despise the movies I</p>
+              <p>like, and yet somehow you still</p>
+              <p>manage to be the best dad every year.</p>
+              <p>How do you do that? :)</p>
+              <p class="text-right">Happy Birthday, papa!</p>
+              <p class="text-right">♥Sarah</p>
+            </div>
+          </div>
+        </section>
+        <!-- Happy birthday word -->
+        <canvas id="c" class="left-0 top-0"></canvas>
+      </div>
+    </div>
+    <!-- Audio -->
+    <audio class="hidden" controls loop>
+      <source src="src/audio/hbd.mp3" type="audio/ogg" />
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+
+  <script src="src/js/effect.js"></script>
+  <script src="src/js/countdown.js"></script>
+</html>
